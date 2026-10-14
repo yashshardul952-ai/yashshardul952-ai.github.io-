@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sharma Mobile & Electronics | College Road, Nashik</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Google Fonts Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              dark: '#0b132b',
+              navy: '#1c2541',
+              blue: '#1e3a8a',
+              lightBlue: '#3b82f6',
+              orange: '#ea580c',
+              orangeHover: '#c2410c',
+              accent: '#f97316',
+              surface: '#f8fafc',
+            }
+          },
+          animation: {
+            'pulse-slow': 'pulse 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0f172a;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #f97316;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #ea580c;
+    }
+    .badge-glow {
+      box-shadow: 0 0 15px rgba(249, 115, 22, 0.35);
+    }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-orange-500 selection:text-white">
+
+  <!-- Top Utility Bar -->
+  <div class="bg-brand-dark text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-4 flex-wrap justify-center">
+        <span><i class="fa-solid fa-location-dot text-orange-500 mr-1.5"></i> College Road, Nashik, Maharashtra</span>
+        <span class="hidden md:inline text-slate-600">|</span>
+        <span><i class="fa-regular fa-clock text-orange-500 mr-1.5"></i> Mon–Sat: 10 AM–9 PM | Sun: 11 AM–6 PM</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:+919000012345" class="hover:text-white transition flex items-center gap-1 font-medium">
+          <i class="fa-solid fa-phone text-orange-500 text-[10px]"></i> +91 90000 12345
+        </a>
+        <a href="https://instagram.com/sharmamobile_demo" target="_blank" rel="noopener noreferrer" class="hover:text-pink-400 transition" title="Instagram">
+          <i class="fa-brands fa-instagram text-sm"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <header class="sticky top-0 z-40 bg-brand-navy/95 backdrop-blur-md border-b border-slate-700/80 transition-all duration-300 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo -->
+        <a href="#home" class="flex items-center gap-3 group">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-orange-600 to-amber-500 flex items-center justify-center text-white text-2xl shadow-lg group-hover:scale-105 transition-transform duration-300">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+          </div>
+          <div>
+            <span class="text-xl sm:text-2xl font-black tracking-tight text-white block">
+              SHARMA <span class="text-orange-500 font-extrabold">MOBILE</span>
+            </span>
+            <span class="text-[11px] tracking-wider uppercase text-slate-300 font-semibold block -mt-1">
+              & Electronics
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-200">
+          <a href="#home" class="hover:text-orange-400 transition">Home</a>
+          <a href="#products" class="hover:text-orange-400 transition">Products & Services</a>
+          <a href="#offers" class="hover:text-orange-400 transition">Special Offers</a>
+          <a href="#why-us" class="hover:text-orange-400 transition">Why Us</a>
+          <a href="#reviews" class="hover:text-orange-400 transition">Reviews</a>
+          <a href="#contact" class="hover:text-orange-400 transition">Contact & Booking</a>
+          <a href="#location" class="hover:text-orange-400 transition">Store Location</a>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="https://wa.me/919000012345?text=Hi%20Sharma%20Mobile,%20I%20would%20like%20to%20inquire%20about%20your%20products." 
+             target="_blank" 
+             rel="noopener noreferrer"
+             class="bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2.5 rounded-lg text-sm font-semibold flex items-center gap-2 shadow-md hover:shadow-emerald-900/30 transition transform hover:-translate-y-0.5">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>WhatsApp Us</span>
+          </a>
+          <a href="#products" 
+             class="bg-orange-600 hover:bg-orange-500 text-white px-4 py-2.5 rounded-lg text-sm font-semibold flex items-center gap-2 shadow-md hover:shadow-orange-900/30 transition transform hover:-translate-y-0.5">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span>Shop Now</span>
+          </a>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <div class="flex lg:hidden">
+          <button id="mobileMenuBtn" type="button" class="p-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 focus:outline-none" aria-label="Toggle menu">
+            <i id="menuIcon" class="fa-solid fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-brand-navy border-b border-slate-700 px-4 pt-3 pb-6 space-y-3">
+      <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-slate-800">Home</a>
+      <a href="#products" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800">Products & Services</a>
+      <a href="#offers" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800">Special Offers</a>
+      <a href="#why-us" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800">Why Choose Us</a>
+      <a href="#reviews" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800">Customer Reviews</a>
+      <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800">Inquiry & Repair Booking</a>
+      <a href="#location" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800">Store Location & Hours</a>
+      
+      <div class="pt-4 flex flex-col gap-2">
+        <a href="https://wa.me/919000012345?text=Hi%20Sharma%20Mobile,%20I%20would%20like%20to%20inquire%20about%20your%20products." 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="w-full text-center bg-emerald-600 text-white font-semibold py-2.5 rounded-lg flex items-center justify-center gap-2">
+          <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp Quick Chat
+        </a>
+        <a href="tel:+919000012345" 
+           class="w-full text-center bg-slate-800 text-white font-semibold py-2.5 rounded-lg flex items-center justify-center gap-2">
+          <i class="fa-solid fa-phone text-orange-500"></i> Call +91 90000 12345
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative bg-gradient-to-br from-brand-dark via-brand-navy to-slate-900 text-white pt-16 pb-24 md:py-28 overflow-hidden">
+    <!-- Subtle background geometric patterns -->
+    <div class="absolute inset-0 opacity-10 pointer-events-none">
+      <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-orange-500 blur-3xl"></div>
+      <div class="absolute top-1/2 -left-20 w-80 h-80 rounded-full bg-blue-600 blur-3xl"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Hero Text -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <div class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/30 text-orange-400 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide uppercase">
+            <span class="w-2 h-2 rounded-full bg-orange-500 animate-ping"></span>
+            Your Trusted Partner for Smart Technology
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight sm:leading-none">
+            Find the Right <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-amber-400 to-yellow-300">
+              Accessories
+            </span> 
+            for Your Phone.
+          </h1>
+
+          <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            Welcome to <strong class="text-white">Sharma Mobile & Electronics</strong> on College Road, Nashik. We offer premium phone cases, 9D tempered glass, heavy-bass audio, high-speed chargers, and instant mobile repair estimates before work begins.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+            <a href="#products" class="w-full sm:w-auto bg-orange-600 hover:bg-orange-500 text-white font-bold px-8 py-3.5 rounded-xl shadow-lg shadow-orange-600/30 transition transform hover:-translate-y-1 flex items-center justify-center gap-2">
+              <i class="fa-solid fa-compass"></i>
+              <span>Explore Products</span>
+            </a>
+            
+            <a href="https://wa.me/919000012345?text=Hello%20Sharma%20Mobile,%20I%20am%20looking%20for%20mobile%20accessories/repair%20services." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-semibold px-7 py-3.5 rounded-xl transition flex items-center justify-center gap-2">
+              <i class="fa-brands fa-whatsapp text-emerald-400 text-xl"></i>
+              <span>Chat on WhatsApp</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="grid grid-cols-3 gap-3 pt-6 border-t border-slate-800 text-center sm:text-left">
+            <div class="p-2 rounded-lg bg-slate-800/40 border border-slate-800">
+              <div class="text-orange-400 font-bold text-base sm:text-lg">100%</div>
+              <div class="text-slate-400 text-xs">Genuine Products</div>
+            </div>
+            <div class="p-2 rounded-lg bg-slate-800/40 border border-slate-800">
+              <div class="text-orange-400 font-bold text-base sm:text-lg">Quick Fix</div>
+              <div class="text-slate-400 text-xs">On-Spot Repairs</div>
+            </div>
+            <div class="p-2 rounded-lg bg-slate-800/40 border border-slate-800">
+              <div class="text-orange-400 font-bold text-base sm:text-lg">College Rd</div>
+              <div class="text-slate-400 text-xs">Best Nashik Deals</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Hero Graphic Showcase -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-sm rounded-3xl p-6 bg-gradient-to-b from-slate-800/90 to-slate-900/90 border border-slate-700 shadow-2xl backdrop-blur-md">
+            
+            <div class="flex items-center justify-between pb-4 border-b border-slate-700 text-xs text-slate-300">
+              <span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block"></span> Shop Open Now</span>
+              <span class="text-orange-400 font-semibold"><i class="fa-solid fa-star text-amber-400 mr-1"></i>4.9/5 Rating</span>
+            </div>
+
+            <!-- Featured Mock Visual -->
+            <div class="my-5 rounded-2xl bg-gradient-to-tr from-blue-950 via-slate-900 to-slate-800 p-6 text-center border border-slate-700/60 relative overflow-hidden group">
+              <div class="absolute -right-8 -top-8 w-24 h-24 bg-orange-500/20 rounded-full blur-xl"></div>
+              
+              <div class="w-24 h-24 mx-auto mb-3 bg-gradient-to-tr from-orange-500 to-amber-400 rounded-2xl flex items-center justify-center text-white text-4xl shadow-xl transform group-hover:scale-110 transition duration-300">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <h3 class="font-bold text-lg text-white">9D Edge Tempered Glass</h3>
+              <p class="text-slate-400 text-xs mt-1">Starting from just ₹99</p>
+              <div class="mt-3 inline-block bg-orange-600/30 text-orange-300 border border-orange-500/30 text-xs px-3 py-1 rounded-full font-medium">
+                Free Professional Installation
+              </div>
+            </div>
+
+            <div class="space-y-2.5 text-xs">
+              <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-800/80 border border-slate-700">
+                <div class="flex items-center gap-2.5">
+                  <div class="w-7 h-7 rounded-lg bg-blue-500/20 text-blue-400 flex items-center justify-center"><i class="fa-solid fa-headphones"></i></div>
+                  <span class="font-medium text-slate-200">Earphones & TWS</span>
+                </div>
+                <span class="text-emerald-400 font-bold">₹199 onwards</span>
+              </div>
+              <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-800/80 border border-slate-700">
+                <div class="flex items-center gap-2.5">
+                  <div class="w-7 h-7 rounded-lg bg-orange-500/20 text-orange-400 flex items-center justify-center"><i class="fa-solid fa-bolt"></i></div>
+                  <span class="font-medium text-slate-200">Fast Chargers & Cables</span>
+                </div>
+                <span class="text-emerald-400 font-bold">₹249 onwards</span>
+              </div>
+              <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-800/80 border border-slate-700">
+                <div class="flex items-center gap-2.5">
+                  <div class="w-7 h-7 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                  <span class="font-medium text-slate-200">Quick Mobile Repair</span>
+                </div>
+                <span class="text-emerald-400 font-bold">₹299 onwards</span>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3 text-center border-t border-slate-700/60">
+              <p class="text-[11px] text-slate-400">Visit our store on College Road, Nashik</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Offers Banner -->
+  <section id="offers" class="bg-gradient-to-r from-orange-600 via-amber-600 to-orange-500 text-white py-5 shadow-lg relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        
+        <div class="flex items-center gap-3 text-center md:text-left">
+          <div class="w-11 h-11 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-xl flex-shrink-0">
+            🔥
+          </div>
+          <div>
+            <div class="font-extrabold text-lg sm:text-xl tracking-tight">
+              Special Festive Offer: Flat 10% OFF on Selected Mobile Accessories!
+            </div>
+            <p class="text-orange-100 text-xs sm:text-sm">
+              Visit our College Road store or order directly on WhatsApp. Valid for limited period!
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <div class="bg-white/10 backdrop-blur-md border border-white/30 rounded-xl px-4 py-2 flex items-center gap-2">
+            <span class="text-xs text-orange-200 uppercase font-semibold">Code:</span>
+            <span class="font-mono font-bold text-white tracking-widest" id="couponCode">SHARMA10</span>
+            <button onclick="copyCouponCode()" class="text-xs bg-white text-orange-700 font-bold px-2 py-1 rounded hover:bg-orange-100 transition" title="Copy coupon">
+              <i class="fa-regular fa-copy"></i>
+            </button>
+          </div>
+          <a href="https://wa.me/919000012345?text=Hello,%20I%20want%20to%20claim%20the%2010%25%20discount%20using%20code%20SHARMA10" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             class="bg-brand-dark hover:bg-black text-white text-xs sm:text-sm font-bold px-4 py-2.5 rounded-xl shadow-md transition whitespace-nowrap">
+            Claim via WhatsApp
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Product & Services Catalogue Section -->
+  <section id="products" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-orange-600 font-bold uppercase tracking-wider text-xs bg-orange-100 px-3 py-1 rounded-full">
+          Store Catalogue
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-dark mt-3">
+          Explore Our Products & Services
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">
+          Affordable, premium-grade accessories for all phone brands like Apple iPhone, Samsung, OnePlus, Xiaomi, Realme, Vivo, and Oppo.
+        </p>
+
+        <!-- Category Filters -->
+        <div class="flex flex-wrap items-center justify-center gap-2 mt-8" id="filterContainer">
+          <button onclick="filterCategory('all')" class="category-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition bg-brand-navy text-white shadow-md">
+            All Items
+          </button>
+          <button onclick="filterCategory('covers')" class="category-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition bg-white text-slate-700 hover:bg-slate-100 border border-slate-200">
+            Mobile Covers
+          </button>
+          <button onclick="filterCategory('glass')" class="category-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition bg-white text-slate-700 hover:bg-slate-100 border border-slate-200">
+            Tempered Glass
+          </button>
+          <button onclick="filterCategory('audio')" class="category-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition bg-white text-slate-700 hover:bg-slate-100 border border-slate-200">
+            Audio & Earbuds
+          </button>
+          <button onclick="filterCategory('chargers')" class="category-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition bg-white text-slate-700 hover:bg-slate-100 border border-slate-200">
+            Chargers & Cables
+          </button>
+          <button onclick="filterCategory('repair')" class="category-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition bg-white text-slate-700 hover:bg-slate-100 border border-slate-200">
+            Repair Services
+          </button>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="productGrid">
+        
+        <!-- Product 1: Mobile Covers -->
+        <div class="product-card group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="covers">
+          <div class="h-48 bg-gradient-to-br from-slate-100 to-slate-200 relative flex items-center justify-center overflow-hidden">
+            <span class="absolute top-3 left-3 bg-blue-600 text-white text-[11px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+              Hot Seller
+            </span>
+            <div class="text-6xl text-slate-700 group-hover:scale-110 transition duration-300">
+              <i class="fa-solid fa-shield"></i>
+            </div>
+            <span class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-xs font-semibold px-2 py-1 rounded text-slate-700">
+              Shockproof & Matte
+            </span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="text-xs text-orange-600 font-semibold mb-1 uppercase tracking-wide">Accessories</div>
+              <h3 class="font-bold text-lg text-slate-900 group-hover:text-brand-navy transition">Designer & Armor Mobile Covers</h3>
+              <p class="text-slate-600 text-xs mt-1 leading-relaxed">
+                Available for iPhone, Samsung, OnePlus, Vivo, Oppo & Xiaomi. Scratch-proof, shock-absorbent and soft-touch matte finish.
+              </p>
+            </div>
+            <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
+              <div>
+                <span class="text-[11px] text-slate-400 block font-medium">Starting from</span>
+                <span class="text-lg font-extrabold text-brand-dark">₹149 <span class="text-xs font-normal text-slate-500">onwards</span></span>
+              </div>
+              <a href="https://wa.me/919000012345?text=Hi%20Sharma%20Mobile,%20I%20am%20interested%20in%20Designer%20Mobile%20Covers." 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold px-3 py-2 rounded-lg flex items-center gap-1.5 transition">
+                <i class="fa-brands fa-whatsapp"></i> Inquire
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2: Tempered Glass -->
+        <div class="product-card group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="glass">
+          <div class="h-48 bg-gradient-to-br from-amber-50 to-orange-100 relative flex items-center justify-center overflow-hidden">
+            <span class="absolute top-3 left-3 bg-orange-600 text-white text-[11px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+              Free Fitting
+            </span>
+            <div class="text-6xl text-orange-600 group-hover:scale-110 transition duration-300">
+              <i class="fa-solid fa-mobile-screen"></i>
+            </div>
+            <span class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-xs font-semibold px-2 py-1 rounded text-slate-700">
+              9D & 11D Edge
+            </span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="text-xs text-orange-600 font-semibold mb-1 uppercase tracking-wide">Protection</div>
+              <h3 class="font-bold text-lg text-slate-900 group-hover:text-brand-navy transition">Edge-to-Edge Tempered Glass</h3>
+              <p class="text-slate-600 text-xs mt-1 leading-relaxed">
+                Super-tough 9H hardness, oil-resistant coating, anti-fingerprint, and bubble-free professional application at our Nashik counter.
+              </p>
+            </div>
+            <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
+              <div>
+                <span class="text-[11px] text-slate-400 block font-medium">Starting from</span>
+                <span class="text-lg font-extrabold text-brand-dark">₹99 <span class="text-xs font-normal text-slate-500">onwards</span></span>
+              </div>
+              <a href="https://wa.me/919000012345?text=Hi%20Sharma%20Mobile,%20I%20want%20Tempered%20Glass%20for%20my%20phone." 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold px-3 py-2 rounded-lg flex items-center gap-1.5 transition">
+                <i class="fa-brands fa-whatsapp"></i> Inquire
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3: Wired Earphones -->
+        <div class="product-card group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="audio">
+          <div class="h-48 bg-gradient-to-br from-indigo-50 to-blue-100 relative flex items-center justify-center overflow-hidden">
+            <span class="absolute top-3 left-3 bg-indigo-600 text-white text-[11px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+              Deep Bass
+            </span>
+            <div class="text-6xl text-indigo-600 group-hover:scale-110 transition duration-300">
+              <i class="fa-solid fa-headphones-simple"></i>
+            </div>
+            <span class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-xs font-semibold px-2 py-1 rounded text-slate-700">
+              3.5mm & Type-C
+            </span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="text-xs text-orange-600 font-semibold mb-1 uppercase tracking-wide">Audio Gear</div>
+              <h3 class="font-bold text-lg text-slate-900 group-hover:text-brand-navy transition">Wired Earphones with Mic</h3>
+              <p class="text-slate-600 text-xs mt-1 leading-relaxed">
+                Tangle-free durable wiring, clear in-line microphone for calls, and punchy audio output for music and meetings.
+              </p>
+            </div>
+            <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
+              <div>
+                <span class="text-[11px] text-slate-400 block font-medium">Starting from</span>
+                <span class="text-lg font-extrabold text-brand-dark">₹199 <span class="text-xs font-normal text-slate-500">onwards</span></span>
+              </div>
+              <a href="https://wa.me/919000012345?text=Hi%20Sharma%20Mobile,%20I%20am%20interested%20in%20Wired%20Earphones." 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold px-3 py-2 rounded-lg flex items-center gap-1.5 transition">
+                <i class="fa-brands fa-whatsapp"></i> Inquire
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4: Bluetooth Earbuds -->
+        <div class="product-card group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="audio">
+          <div class="h-48 bg-gradient-to-br from-emerald-50 to-teal-100 relative flex items-center justify-center overflow-hidden">
+            <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[11px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+              Wireless
+            </span>
+            <div class="text-6xl text-emerald-600 group-hover:scale-110 transition duration-300">
+              <i class="fa-solid fa-wave-square"></i>
+            </div>
+            <span class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-xs font-semibold px-2 py-1 rounded text-slate-700">
+              30hr Battery
+            </span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="text-xs text-orange-600 font-semibold mb-1 uppercase tracking-wide">Audio Gear</div>
+              <h3 class="font-bold text-lg text-slate-900 group-hover:text-brand-navy transition">Bluetooth Earbuds & Neckbands</h3>
+              <p class="text-slate-600 text-xs mt-1 leading-relaxed">
+                TWS true wireless earbuds and neckbands with low-latency gaming mode, fast Type-C charging, and crystal-clear voice clarity.
+              </p>
+            </div>
+            <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
+              <div>
+                <span class="text-[11px] text-slate-400 block font-medium">Starting from</span>
+                <span class="text-lg font-extrabold text-brand-dark">₹699 <span class="text-xs font-normal text-slate-500">onwards</span></span>
+              </div>
+              <a href="https://wa.me/919000012345?text=Hi%20Sharma%20Mobile,%20I%20want%20to%20buy%20Bluetooth%20Earbuds." 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold px-3 py-2 rounded-lg flex items-center gap-1.5 transition">
+                <i class="fa-brands fa-whatsapp"></i> Inquire
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5: Chargers & Cables -->
+        <div class="product-card group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="chargers">
+          <div class="h-48 bg-gradient-to-br from-yellow-50 to-amber-100 relative flex items-center justify-center overflow-hidden">
+            <span class="absolute top-3 left-3 bg-amber-600 text-white text-[11px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+              Quick Charge
+            </span>
+            <div class="text-6xl text-amber-600 group-hover:scale-110 transition duration-300">
+              <i class="fa-solid fa-plug-circle-bolt"></i>
+            </div>
+            <span class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-xs font-semibold px-2 py-1 rounded text-slate-700">
+              20W to 65W PD
+            </span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="text-xs text-orange-600 font-semibold mb-1 uppercase tracking-wide">Power & Charging</div>
+              <h3 class="font-bold text-lg text-slate-900 group-hover:text-brand-navy transition">Mobile Fast Chargers & Cables</h3>
+              <p class="text-slate-600 text-xs mt-1 leading-relaxed">
+                High-speed charging bricks (Type-C PD, Dash, Dart, Vooc) plus heavy-duty braided data transfer cables for Android and iPhone.
+              </p>
+            </div>
+            <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
+              <div>
+                <span class="text-[11px] text-slate-400 block font-medium">Starting from</span>
+                <span class="text-lg font-extrabold text-brand-dark">₹249 <span class="text-xs font-normal text-slate-500">onwards</span></span>
+              </div>
+              <a href="https://wa.me/919000012345?text=Hi%20Sharma%20Mobile,%20I%20need%20a%20Fast%20Charger/Cable." 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold px-3 py-2 rounded-lg flex items-center gap-1.5 transition">
+                <i class="fa-brands fa-whatsapp"></i> Inquire
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6: Basic Mobile Repair -->
+        <div class="product-card group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="repair">
+          <div class="h-48 bg-gradient-to-br from-rose-50 to-red-100 relative flex items-center justify-center overflow-hidden">
+            <span class="absolute top-3 left-3 bg-rose-600 text-white text-[11px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+              Same Day Fix
+            </span>
+            <div class="text-6xl text-rose-600 group-hover:scale-110 transition duration-300">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+            </div>
+            <span class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-xs font-semibold px-2 py-1 rounded text-slate-700">
+              Free Diagnosis
+            </span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="text-xs text-orange-600 font-semibold mb-1 uppercase tracking-wide">Expert Service</div>
+              <h3 class="font-bold text-lg text-slate-900 group-hover:text-brand-navy transition">Basic Mobile Repair Services</h3>
+              <p class="text-slate-600 text-xs mt-1 leading-relaxed">
+                Screen & battery replacement, speaker repairs, mic fix, and charging jack repairs. We provide repair estimates before work begins!
+              </p>
+            </div>
+            <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
+              <div>
+                <span class="text-[11px] text-slate-400 block font-medium">Starting from</span>
+                <span class="text-lg font-extrabold text-brand-dark">₹299 <span class="text-xs font-normal text-slate-500">onwards</span></span>
+              </div>
+              <a href="#contact" 
+                 class="bg-orange-600 hover:bg-orange-500 text-white text-xs font-semibold px-3 py-2 rounded-lg flex items-center gap-1.5 transition">
+                <i class="fa-solid fa-wrench"></i> Book Repair
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Catalogue Notice -->
+      <div class="mt-12 text-center bg-blue-50 border border-blue-200 rounded-2xl p-6">
+        <p class="text-brand-dark font-medium text-sm">
+          💡 Can't find the exact accessory or model you need? We stock 500+ items at our College Road shop!
+        </p>
+        <a href="https://wa.me/919000012345?text=Hello%20Sharma%20Mobile,%20do%20you%20have%20accessories%20for%20my%20phone%20model?" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 mt-3 text-orange-600 font-bold hover:text-orange-700 text-sm">
+          <span>Ask us about your specific phone model on WhatsApp</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section id="why-us" class="py-20 bg-brand-navy text-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-orange-400 font-bold uppercase tracking-wider text-xs bg-orange-500/10 border border-orange-500/30 px-3 py-1 rounded-full">
+          The Sharma Mobile Advantage
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3">
+          Why Choose Us in Nashik?
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base mt-2">
+          We combine transparent pricing, high product variety, and genuine customer care for all your mobile needs.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Feature 1 -->
+        <div class="bg-slate-800/60 border border-slate-700 rounded-2xl p-6 hover:bg-slate-800 transition duration-300 transform hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-orange-500/20 text-orange-400 flex items-center justify-center text-2xl mb-4">
+            <i class="fa-solid fa-tags"></i>
+          </div>
+          <h3 class="font-bold text-lg text-white mb-2">Affordable Prices</h3>
+          <p class="text-slate-300 text-xs leading-relaxed">
+            Wholesale-like competitive prices on covers, protectors, and accessories without compromising on build quality.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="bg-slate-800/60 border border-slate-700 rounded-2xl p-6 hover:bg-slate-800 transition duration-300 transform hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center text-2xl mb-4">
+            <i class="fa-solid fa-layer-group"></i>
+          </div>
+          <h3 class="font-bold text-lg text-white mb-2">Multiple Accessory Options</h3>
+          <p class="text-slate-300 text-xs leading-relaxed">
+            From budget essentials to premium cases, multiple color variations and compatibility for 100+ smartphone models.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="bg-slate-800/60 border border-slate-700 rounded-2xl p-6 hover:bg-slate-800 transition duration-300 transform hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl mb-4">
+            <i class="fa-solid fa-handshake-angle"></i>
+          </div>
+          <h3 class="font-bold text-lg text-white mb-2">Friendly Customer Service</h3>
+          <p class="text-slate-300 text-xs leading-relaxed">
+            Honest advice, patient recommendations, and free glass application assistance tailored to student and family budgets.
+          </p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="bg-slate-800/60 border border-slate-700 rounded-2xl p-6 hover:bg-slate-800 transition duration-300 transform hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-2xl mb-4">
+            <i class="fa-solid fa-calculator"></i>
+          </div>
+          <h3 class="font-bold text-lg text-white mb-2">Estimates Before Work Begins</h3>
+          <p class="text-slate-300 text-xs leading-relaxed">
+            Zero hidden costs. You receive complete inspection and price transparency before we touch your phone for any repair.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Customer Reviews Section -->
+  <section id="reviews" class="py-20 bg-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-orange-600 font-bold uppercase tracking-wider text-xs bg-orange-100 px-3 py-1 rounded-full">
+          Local Love in Nashik
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-dark mt-3">
+          What Our Customers Say
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">
+          Real feedback from students, working professionals, and residents around College Road, Nashik.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Review 1 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 text-sm mb-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-700 text-sm italic leading-relaxed">
+              "Got 9D tempered glass applied to my OnePlus Nord. The installation was so clean—no bubbles or dust specks at all! Plus, it only took 5 minutes and cost just ₹99. Best shop on College Road!"
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-blue-100 text-brand-navy flex items-center justify-center font-bold text-sm">
+              RK
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-slate-900">Rohit Kulkarni</h4>
+              <p class="text-slate-500 text-xs">BYK College Student, Nashik</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 text-sm mb-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-700 text-sm italic leading-relaxed">
+              "My phone's charging port stopped working suddenly. The owner gave me an exact quote upfront of ₹350 before opening the phone. Repaired it within 1 hour. Completely transparent service."
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center font-bold text-sm">
+              SP
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-slate-900">Sneha Patil</h4>
+              <p class="text-slate-500 text-xs">Resident, College Road</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 text-sm mb-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p class="text-slate-700 text-sm italic leading-relaxed">
+              "Great variety of covers and audio earphones. Sharma ji helped me test 3 different earphones before buying. Friendly behavior and competitive prices compared to mall shops."
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold text-sm">
+              AS
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-slate-900">Aditya Shinde</h4>
+              <p class="text-slate-500 text-xs">Nashik Resident</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Contact & Repair Booking Form -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-gradient-to-br from-brand-navy to-slate-900 rounded-3xl shadow-2xl p-6 sm:p-10 lg:p-12 text-white">
+        
+        <div class="text-center max-w-2xl mx-auto mb-8">
+          <span class="text-orange-400 font-bold uppercase tracking-wider text-xs bg-orange-500/20 px-3 py-1 rounded-full">
+            Quick Inquiry & Booking
+          </span>
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold mt-3">
+            Send an Inquiry or Book a Repair
+          </h2>
+          <p class="text-slate-300 text-xs sm:text-sm mt-2">
+            Fill in the details below. We'll inspect your request and respond via phone or WhatsApp with the best price quote.
+          </p>
+        </div>
+
+        <!-- Form Mode Tabs -->
+        <div class="flex justify-center mb-8">
+          <div class="bg-slate-800 p-1.5 rounded-xl inline-flex border border-slate-700">
+            <button id="tabProductInquiry" onclick="switchFormTab('product')" class="px-5 py-2 rounded-lg text-xs sm:text-sm font-semibold transition bg-orange-600 text-white">
+              <i class="fa-solid fa-bag-shopping mr-1.5"></i> Product Inquiry
+            </button>
+            <button id="tabRepairBooking" onclick="switchFormTab('repair')" class="px-5 py-2 rounded-lg text-xs sm:text-sm font-semibold transition text-slate-300 hover:text-white">
+              <i class="fa-solid fa-wrench mr-1.5"></i> Repair Estimate
+            </button>
+          </div>
+        </div>
+
+        <!-- Booking & Inquiry Form -->
+        <form id="inquiryForm" onsubmit="handleFormSubmit(event)" class="space-y-5">
+          <input type="hidden" id="formType" value="Product Inquiry">
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label for="fullName" class="block text-xs font-semibold text-slate-300 mb-1.5">Full Name *</label>
+              <input type="text" id="fullName" required placeholder="e.g. Ramesh Deshmukh" 
+                     class="w-full bg-slate-800/90 border border-slate-700 text-white rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-orange-500 transition">
+            </div>
+
+            <div>
+              <label for="phoneNumber" class="block text-xs font-semibold text-slate-300 mb-1.5">Phone Number (WhatsApp) *</label>
+              <input type="tel" id="phoneNumber" required placeholder="e.g. 98220 12345" 
+                     class="w-full bg-slate-800/90 border border-slate-700 text-white rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-orange-500 transition">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label for="deviceModel" class="block text-xs font-semibold text-slate-300 mb-1.5">Phone Brand & Model *</label>
+              <input type="text" id="deviceModel" required placeholder="e.g. iPhone 13 / Samsung S21 / Redmi Note 11" 
+                     class="w-full bg-slate-800/90 border border-slate-700 text-white rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-orange-500 transition">
+            </div>
+
+            <div>
+              <label for="inquirySubject" class="block text-xs font-semibold text-slate-300 mb-1.5" id="subjectLabel">Interested Accessory / Category</label>
+              <select id="inquirySubject" class="w-full bg-slate-800/90 border border-slate-700 text-white rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-orange-500 transition">
+                <option value="Mobile Cover">Mobile Cover</option>
+                <option value="9D Tempered Glass">9D Tempered Glass</option>
+                <option value="Earphones / Earbuds">Earphones / Wireless Earbuds</option>
+                <option value="Charger / Cable">Fast Charger / Cable</option>
+                <option value="Other Accessory">Other Accessory</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="notes" class="block text-xs font-semibold text-slate-300 mb-1.5" id="notesLabel">Details or Special Request</label>
+            <textarea id="notes" rows="3" placeholder="Tell us more about the color, problem, or product you need..." 
+                      class="w-full bg-slate-800/90 border border-slate-700 text-white rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-orange-500 transition"></textarea>
+          </div>
+
+          <div class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="text-xs text-slate-400 flex items-center gap-1.5">
+              <i class="fa-solid fa-lock text-orange-500"></i> No advance fees required for repair estimation.
+            </div>
+
+            <button type="submit" class="w-full sm:w-auto bg-orange-600 hover:bg-orange-500 text-white font-bold px-8 py-3.5 rounded-xl shadow-lg shadow-orange-600/30 transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span id="submitBtnText">Submit Product Inquiry</span>
+            </button>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Store Location, Operating Hours & Google Map -->
+  <section id="location" class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
+        
+        <!-- Left: Address & Store Timing Card -->
+        <div class="lg:col-span-5 bg-white p-8 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="inline-flex items-center gap-1.5 bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs font-bold uppercase mb-4">
+              <i class="fa-solid fa-shop"></i> Visit Our Nashik Shop
+            </div>
+            
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-dark mb-4">
+              Sharma Mobile & Electronics
+            </h3>
+            
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Drop by for immediate glass replacement, try our Bluetooth earbuds in person, or hand over your phone for a quick and honest repair estimate.
+            </p>
+
+            <div class="space-y-4 text-sm">
+              <div class="flex items-start gap-3.5">
+                <div class="w-9 h-9 rounded-lg bg-orange-500/10 text-orange-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <i class="fa-solid fa-location-dot text-base"></i>
+                </div>
+                <div>
+                  <strong class="text-slate-900 block font-semibold">Store Address:</strong>
+                  <span class="text-slate-600 text-xs sm:text-sm">College Road, Nashik, Maharashtra – 422005 (Near BYK & KTHM circle)</span>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5">
+                <div class="w-9 h-9 rounded-lg bg-blue-500/10 text-blue-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <i class="fa-solid fa-clock text-base"></i>
+                </div>
+                <div>
+                  <strong class="text-slate-900 block font-semibold">Store Hours:</strong>
+                  <span class="text-slate-600 text-xs sm:text-sm block">Monday – Saturday: <strong>10:00 AM – 9:00 PM</strong></span>
+                  <span class="text-slate-600 text-xs sm:text-sm block">Sunday: <strong>11:00 AM – 6:00 PM</strong></span>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5">
+                <div class="w-9 h-9 rounded-lg bg-emerald-500/10 text-emerald-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <i class="fa-solid fa-phone text-base"></i>
+                </div>
+                <div>
+                  <strong class="text-slate-900 block font-semibold">Contact & WhatsApp:</strong>
+                  <a href="tel:+919000012345" class="text-orange-600 font-bold hover:underline block text-sm">+91 90000 12345</a>
+                  <a href="mailto:sharmamobile@example.com" class="text-slate-500 hover:text-slate-700 text-xs">sharmamobile@example.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-slate-100 flex flex-col sm:flex-row gap-3">
+            <a href="https://maps.google.com/?q=College+Road+Nashik" target="_blank" rel="noopener noreferrer" 
+               class="bg-brand-navy hover:bg-brand-dark text-white text-xs sm:text-sm font-semibold py-3 px-5 rounded-xl text-center transition flex items-center justify-center gap-2">
+              <i class="fa-solid fa-diamond-turn-right text-orange-400"></i> Get Driving Directions
+            </a>
+            <a href="tel:+919000012345" 
+               class="bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs sm:text-sm font-semibold py-3 px-5 rounded-xl text-center transition flex items-center justify-center gap-2">
+              <i class="fa-solid fa-phone"></i> Call Store Now
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Responsive Embedded Google Map -->
+        <div class="lg:col-span-7 bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden min-h-[380px] relative flex flex-col">
+          <div class="bg-slate-100 px-5 py-3 border-b border-slate-200 text-xs font-semibold text-slate-600 flex items-center justify-between">
+            <span><i class="fa-solid fa-map-pin text-orange-600 mr-1.5"></i> Google Maps: College Road, Nashik</span>
+            <span class="text-emerald-700 font-bold bg-emerald-100 px-2.5 py-0.5 rounded-full text-[11px]">Open Today</span>
+          </div>
+          <iframe 
+            title="Sharma Mobile & Electronics Location Map"
+            src="https://maps.google.com/maps?q=College+Road+Nashik+Maharashtra&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+            class="w-full h-full min-h-[360px] flex-1 border-0" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Floating WhatsApp Action Button & Interactive Quick Box -->
+  <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+    
+    <!-- WhatsApp Quick Popover Window -->
+    <div id="waChatDrawer" class="hidden mb-3 w-80 bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden transform transition-all duration-300">
+      <div class="bg-emerald-600 p-4 text-white flex items-center justify-between">
+        <div class="flex items-center gap-2.5">
+          <div class="w-9 h-9 rounded-full bg-white text-emerald-600 flex items-center justify-center font-bold text-lg">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-sm">Sharma Mobile Chat</h4>
+            <p class="text-[11px] text-emerald-100 flex items-center gap-1">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-300 inline-block"></span> Online | Replies fast
+            </p>
+          </div>
+        </div>
+        <button onclick="toggleWaDrawer()" class="text-white/80 hover:text-white text-lg">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="p-4 bg-slate-50 text-xs text-slate-700 space-y-3 max-h-56 overflow-y-auto">
+        <div class="bg-white p-3 rounded-xl rounded-tl-none shadow-sm border border-slate-200">
+          Namaste! 🙏 Welcome to Sharma Mobile & Electronics, College Road, Nashik. How can we help you today?
+        </div>
+        <div class="text-[10px] text-slate-400 text-right">Just now</div>
+      </div>
+
+      <div class="p-3 bg-white border-t border-slate-200 space-y-2">
+        <a href="https://wa.me/919000012345?text=Hi%20Sharma%20Mobile,%20I%20want%20to%20ask%20about%20mobile%20accessories" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="block w-full text-center text-xs bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold py-2 rounded-lg transition">
+          🛒 Ask about accessories
+        </a>
+        <a href="https://wa.me/919000012345?text=Hi%20Sharma%20Mobile,%20I%20need%20a%20repair%20quote%20for%20my%20phone" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="block w-full text-center text-xs bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold py-2 rounded-lg transition">
+          🔧 Get repair estimate
+        </a>
+        <a href="https://wa.me/919000012345?text=Hi%20Sharma%20Mobile,%20is%20the%20shop%20open%20right%20now?" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="block w-full text-center text-xs bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 rounded-lg transition">
+          <i class="fa-brands fa-whatsapp mr-1"></i> Start Direct Chat
+        </a>
+      </div>
+    </div>
+
+    <!-- Floating Action Button -->
+    <button onclick="toggleWaDrawer()" 
+            aria-label="Open WhatsApp Chat" 
+            class="relative group bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 transform hover:scale-110 badge-glow">
+      <span class="absolute -top-1 -right-1 w-3.5 h-3.5 bg-orange-500 rounded-full border-2 border-white"></span>
+      <i class="fa-brands fa-whatsapp text-3xl"></i>
+      <span class="hidden group-hover:block absolute right-16 bg-slate-900 text-white text-xs font-medium px-3 py-1.5 rounded-lg whitespace-nowrap shadow-lg">
+        Chat with us!
+      </span>
+    </button>
+  </div>
+
+  <!-- Custom Notification Toast -->
+  <div id="toastNotification" class="fixed top-5 right-5 z-50 transform translate-x-full transition-all duration-300 max-w-sm w-full pointer-events-none">
+    <div class="bg-brand-navy border border-slate-700 text-white p-4 rounded-2xl shadow-2xl flex items-start gap-3 pointer-events-auto">
+      <div id="toastIcon" class="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center flex-shrink-0 mt-0.5 text-base">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <div class="flex-1">
+        <h4 id="toastTitle" class="text-sm font-bold text-white">Success!</h4>
+        <p id="toastMessage" class="text-xs text-slate-300 mt-0.5 leading-relaxed">Operation completed.</p>
+        <div id="toastActionContainer" class="mt-2.5 hidden"></div>
+      </div>
+      <button onclick="hideToast()" class="text-slate-400 hover:text-white text-xs">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-brand-dark text-slate-400 pt-16 pb-8 border-t border-slate-800 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+        
+        <!-- Brand Info -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-orange-600 flex items-center justify-center text-white text-xl">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <div>
+              <span class="text-lg font-black tracking-tight text-white block">SHARMA MOBILE</span>
+              <span class="text-[10px] tracking-wider uppercase text-slate-400 font-semibold block">& Electronics</span>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Your Trusted Partner for Smart Technology in Nashik. We sell quality smartphones, mobile accessories, chargers, earphones and provide honest mobile repair estimates.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://instagram.com/sharmamobile_demo" target="_blank" rel="noopener noreferrer" 
+               class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-pink-600 text-slate-300 hover:text-white flex items-center justify-center transition" title="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/919000012345" target="_blank" rel="noopener noreferrer" 
+               class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-emerald-600 text-slate-300 hover:text-white flex items-center justify-center transition" title="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="tel:+919000012345" 
+               class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-orange-600 text-slate-300 hover:text-white flex items-center justify-center transition" title="Call">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-white font-bold text-sm tracking-wider uppercase mb-4">Quick Links</h4>
+          <ul class="space-y-2.5 text-xs">
+            <li><a href="#home" class="hover:text-orange-400 transition">Home</a></li>
+            <li><a href="#products" class="hover:text-orange-400 transition">Products & Catalogue</a></li>
+            <li><a href="#offers" class="hover:text-orange-400 transition">10% OFF Special Offer</a></li>
+            <li><a href="#why-us" class="hover:text-orange-400 transition">Why Choose Us</a></li>
+            <li><a href="#reviews" class="hover:text-orange-400 transition">Customer Testimonials</a></li>
+            <li><a href="#contact" class="hover:text-orange-400 transition">Book a Mobile Repair</a></li>
+          </ul>
+        </div>
+
+        <!-- Products List -->
+        <div>
+          <h4 class="text-white font-bold text-sm tracking-wider uppercase mb-4">Popular Items</h4>
+          <ul class="space-y-2.5 text-xs">
+            <li><a href="#products" class="hover:text-orange-400 transition">Mobile Covers (₹149+)</a></li>
+            <li><a href="#products" class="hover:text-orange-400 transition">9D Tempered Glass (₹99+)</a></li>
+            <li><a href="#products" class="hover:text-orange-400 transition">Wired Earphones (₹199+)</a></li>
+            <li><a href="#products" class="hover:text-orange-400 transition">Bluetooth Earbuds (₹699+)</a></li>
+            <li><a href="#products" class="hover:text-orange-400 transition">Fast Chargers (₹249+)</a></li>
+            <li><a href="#products" class="hover:text-orange-400 transition">Screen & Battery Fix (₹299+)</a></li>
+          </ul>
+        </div>
+
+        <!-- Store Information -->
+        <div>
+          <h4 class="text-white font-bold text-sm tracking-wider uppercase mb-4">Store Details</h4>
+          <ul class="space-y-3 text-xs">
+            <li class="flex items-start gap-2.5">
+              <i class="fa-solid fa-location-dot text-orange-500 mt-1"></i>
+              <span>College Road, Nashik, Maharashtra, 422005</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i class="fa-solid fa-phone text-orange-500"></i>
+              <a href="tel:+919000012345" class="hover:text-white transition">+91 90000 12345</a>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i class="fa-solid fa-envelope text-orange-500"></i>
+              <a href="mailto:sharmamobile@example.com" class="hover:text-white transition">sharmamobile@example.com</a>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i class="fa-brands fa-instagram text-orange-500"></i>
+              <span>@sharmamobile_demo</span>
+            </li>
+            <li class="pt-2 text-[11px] text-slate-400 border-t border-slate-800">
+              <span class="text-orange-400 font-semibold">Store Timings:</span><br>
+              Mon–Sat: 10 AM – 9 PM | Sun: 11 AM – 6 PM
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-3">
+        <p>© 2026 Sharma Mobile & Electronics. All rights reserved.</p>
+        <p class="text-slate-400 text-[11px]">
+          Fictional demonstration business website created for local shop promotion.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // --- Mobile Navigation Toggle ---
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuIcon = document.getElementById('menuIcon');
+
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.contains('hidden');
+        if (isHidden) {
+          mobileMenu.classList.remove('hidden');
+          menuIcon.classList.remove('fa-bars');
+          menuIcon.classList.add('fa-xmark');
+        } else {
+          mobileMenu.classList.add('hidden');
+          menuIcon.classList.remove('fa-xmark');
+          menuIcon.classList.add('fa-bars');
+        }
+      });
+    }
+
+    // Close mobile menu when an anchor link is clicked
+    document.querySelectorAll('#mobileMenu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIcon.classList.remove('fa-xmark');
+        menuIcon.classList.add('fa-bars');
+      });
+    });
+
+    // --- Product Filtering Functionality ---
+    function filterCategory(category) {
+      // Update filter button styling
+      const buttons = document.querySelectorAll('#filterContainer .category-btn');
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-brand-navy', 'text-white', 'shadow-md');
+        btn.classList.add('bg-white', 'text-slate-700', 'border', 'border-slate-200');
+      });
+
+      // Highlight active button
+      event.currentTarget.classList.remove('bg-white', 'text-slate-700', 'border', 'border-slate-200');
+      event.currentTarget.classList.add('bg-brand-navy', 'text-white', 'shadow-md');
+
+      // Filter product items
+      const cards = document.querySelectorAll('#productGrid .product-card');
+      cards.forEach(card => {
+        const itemCat = card.getAttribute('data-category');
+        if (category === 'all' || itemCat === category) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // --- Form Mode Tab Switcher ---
+    let currentMode = 'product';
+
+    function switchFormTab(mode) {
+      currentMode = mode;
+      const tabProduct = document.getElementById('tabProductInquiry');
+      const tabRepair = document.getElementById('tabRepairBooking');
+      const formType = document.getElementById('formType');
+      const subjectLabel = document.getElementById('subjectLabel');
+      const inquirySubject = document.getElementById('inquirySubject');
+      const notesLabel = document.getElementById('notesLabel');
+      const submitBtnText = document.getElementById('submitBtnText');
+
+      if (mode === 'product') {
+        tabProduct.className = "px-5 py-2 rounded-lg text-xs sm:text-sm font-semibold transition bg-orange-600 text-white";
+        tabRepair.className = "px-5 py-2 rounded-lg text-xs sm:text-sm font-semibold transition text-slate-300 hover:text-white";
+        formType.value = "Product Inquiry";
+        subjectLabel.textContent = "Interested Accessory / Category";
+        notesLabel.textContent = "Details or Special Request";
+        submitBtnText.textContent = "Submit Product Inquiry";
+        
+        inquirySubject.innerHTML = `
+          <option value="Mobile Cover">Mobile Cover</option>
+          <option value="9D Tempered Glass">9D Tempered Glass</option>
+          <option value="Earphones / Earbuds">Earphones / Wireless Earbuds</option>
+          <option value="Charger / Cable">Fast Charger / Cable</option>
+          <option value="Other Accessory">Other Accessory</option>
+        `;
+      } else {
+        tabRepair.className = "px-5 py-2 rounded-lg text-xs sm:text-sm font-semibold transition bg-orange-600 text-white";
+        tabProduct.className = "px-5 py-2 rounded-lg text-xs sm:text-sm font-semibold transition text-slate-300 hover:text-white";
+        formType.value = "Mobile Repair Request";
+        subjectLabel.textContent = "Primary Repair Issue";
+        notesLabel.textContent = "Describe the phone problem in detail";
+        submitBtnText.textContent = "Request Repair Estimate";
+
+        inquirySubject.innerHTML = `
+          <option value="Cracked Screen / Display Broken">Cracked Screen / Display Broken</option>
+          <option value="Battery Draining Fast / Dead">Battery Draining Fast / Dead</option>
+          <option value="Charging Jack / Port Issue">Charging Jack / Port Issue</option>
+          <option value="Speaker / Mic Not Working">Speaker / Mic Not Working</option>
+          <option value="Water Damage / Other Repair">Water Damage / Other Repair</option>
+        `;
+      }
+    }
+
+    // --- Form Submission & WhatsApp Forwarding ---
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      
+      const formTypeVal = document.getElementById('formType').value;
+      const fullName = document.getElementById('fullName').value.trim();
+      const phone = document.getElementById('phoneNumber').value.trim();
+      const device = document.getElementById('deviceModel').value.trim();
+      const subject = document.getElementById('inquirySubject').value;
+      const notes = document.getElementById('notes').value.trim();
+
+      // Construct prefilled WhatsApp text
+      const waText = encodeURIComponent(
+        `*New ${formTypeVal} via Website*\n\n` +
+        `• *Name:* ${fullName}\n` +
+        `• *Phone:* ${phone}\n` +
+        `• *Device:* ${device}\n` +
+        `• *Category/Issue:* ${subject}\n` +
+        (notes ? `• *Notes:* ${notes}\n` : '') +
+        `• *Store:* Sharma Mobile, College Road, Nashik`
+      );
+
+      const waUrl = `https://wa.me/919000012345?text=${waText}`;
+
+      // Reset form
+      document.getElementById('inquiryForm').reset();
+
+      // Show toast notification with direct WhatsApp launch button
+      showToast(
+        "Request Received!",
+        `Thanks ${fullName}, we received your ${formTypeVal.toLowerCase()}. Click below to speed up your response via WhatsApp:`,
+        waUrl
+      );
+    }
+
+    // --- Copy Coupon Code Handler ---
+    function copyCouponCode() {
+      const code = document.getElementById('couponCode').innerText;
+      
+      // Use fallback clipboard command
+      const tempInput = document.createElement("input");
+      tempInput.value = code;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      try {
+        document.execCommand('copy');
+        showToast("Coupon Copied!", `Code "${code}" copied to clipboard. Enjoy 10% OFF!`);
+      } catch (err) {
+        showToast("Coupon Code", `Use code ${code} at the store or on WhatsApp.`);
+      }
+      document.body.removeChild(tempInput);
+    }
+
+    // --- Floating WhatsApp Drawer Toggle ---
+    function toggleWaDrawer() {
+      const drawer = document.getElementById('waChatDrawer');
+      if (drawer.classList.contains('hidden')) {
+        drawer.classList.remove('hidden');
+      } else {
+        drawer.classList.add('hidden');
+      }
+    }
+
+    // --- Toast Notification Functions ---
+    let toastTimeout;
+    function showToast(title, message, waLink = null) {
+      clearTimeout(toastTimeout);
+      const toast = document.getElementById('toastNotification');
+      const toastTitle = document.getElementById('toastTitle');
+      const toastMessage = document.getElementById('toastMessage');
+      const actionContainer = document.getElementById('toastActionContainer');
+
+      toastTitle.textContent = title;
+      toastMessage.textContent = message;
+
+      if (waLink) {
+        actionContainer.classList.remove('hidden');
+        actionContainer.innerHTML = `
+          <a href="${waLink}" target="_blank" rel="noopener noreferrer" 
+             class="inline-flex items-center gap-1.5 text-xs bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-3 py-1.5 rounded-lg transition">
+            <i class="fa-brands fa-whatsapp"></i> Send to WhatsApp Now
+          </a>
+        `;
+      } else {
+        actionContainer.classList.add('hidden');
+        actionContainer.innerHTML = '';
+      }
+
+      toast.classList.remove('translate-x-full');
+
+      toastTimeout = setTimeout(() => {
+        hideToast();
+      }, 7000);
+    }
+
+    function hideToast() {
+      const toast = document.getElementById('toastNotification');
+      toast.classList.add('translate-x-full');
+    }
+  </script>
+</body>
+</html>
